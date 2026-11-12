@@ -345,6 +345,22 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 .xrow .xc span{font-size:12.5px;color:#4b4860}
 .xrow .stampd{color:#8a5a00;background:rgba(241,182,70,.25)}
 .flow{margin:6px 0}
+.gscene{position:relative;margin:88px 0 -52px;border:1px solid var(--rule);border-radius:16px;overflow:hidden;background:radial-gradient(ellipse at 50% 125%,rgba(176,124,255,.34),transparent 62%),radial-gradient(circle,rgba(130,184,255,.10) 0 1.5px,transparent 2px) 0 0/18px 18px,linear-gradient(180deg,#171230,#0d0e1c)}
+.gscene.gbig{margin:0;border-radius:0;border-width:0 0 1px}
+.gscene::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.20) 0 1px,transparent 1px 3px)}
+.gscene .gst{display:flex;align-items:flex-end;justify-content:center;gap:clamp(2px,1.6vw,20px);padding:18px 8px 0}
+.gscene .gst img{width:clamp(54px,11vw,118px);height:auto;image-rendering:pixelated;flex:none}
+.gscene.gbig .gst{padding-top:64px}.gscene.gbig .gst img{width:clamp(54px,10vw,124px)}
+.gmon{flex:0 1 430px;min-width:0;align-self:center;margin:0 4px 12px;border:6px solid #5a3a22;border-radius:6px;box-shadow:0 0 0 2px #2a1a10,0 0 26px rgba(130,184,255,.25);background:#0d1326}
+.gscene.gbig .gmon{flex-basis:560px}
+.gmon canvas{display:block;width:100%;height:auto;image-rendering:pixelated}
+.gcap{position:relative;z-index:1;text-align:center;padding:6px 12px 12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.5))}
+.gcap b{display:block;font-size:clamp(16px,2.5vw,25px);letter-spacing:.08em;line-height:1.4;background:linear-gradient(90deg,#ff86b8,#b07cff 50%,#82b8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gcap span{display:block;font-size:12.5px;color:var(--muted);line-height:1.5}
+.gscene.gbig .gcap b{font-size:clamp(19px,3.6vw,38px)}
+.gscene .ctag{position:absolute;left:3%;top:14px;z-index:1;font-size:clamp(11px,1.5vw,16px);font-weight:700;color:var(--amber);letter-spacing:.06em}
+@media (max-width:760px){.gscene{margin:64px 0 -36px}.gscene.gbig{margin:0}}
+@media (max-width:620px){.gscene .gst img.opt{display:none}}
 .scn2{position:relative;display:inline-block;line-height:0}
 .scn2 .bx2{position:absolute;border:2px solid;border-radius:4px;box-sizing:border-box;pointer-events:none}
 .scn2 .bx2.thin{border-width:1px;opacity:.75}
@@ -384,12 +400,7 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
   <a href="#names">실제 모형</a><a href="#duel">대결</a><a href="#sum">정리</a><a href="#kg">지식 색인</a><a href="#export">꾸러미</a>
 </nav>
 
-<div class="cover alt" data-img="cover_cnn_find">
-  <div class="cstage" aria-hidden="true">
-    <img data-who="doc" data-mood="board" alt=""><img data-who="asst" data-mood="smile" alt=""><img data-who="sia" data-mood="smile" alt=""><img data-who="moa" data-mood="smile" alt=""><img data-who="fly" data-mood="magnify" alt=""><img data-who="robo" data-mood="calc" alt="">
-  </div>
-  <div class="ctitle"><b>AI 연구실 해설 · CNN 특집 2편</b><span>얼굴 찾기 · 칠하기 · 빌려 쓰기</span></div>
-</div>
+<figure class="gscene gbig" data-img="cover_cnn_find" role="img" aria-label="액자 모니터 속 넓은 판 위를 노란 창이 훑고 세 사람 자리에 상자가 쳐지며, 연구실 식구 여섯이 둘러서 있습니다"><div class="gst"><img data-who="fly" data-mood="magnify" class="opt" alt=""><img data-who="doc" data-mood="board" alt=""><img data-who="asst" data-mood="firm" alt=""><div class="gmon"><canvas data-kind="find" width="128" height="72"></canvas></div><img data-who="sia" data-mood="smile" alt=""><img data-who="moa" data-mood="smile" class="opt" alt=""><img data-who="robo" data-mood="calc" alt=""></div><figcaption class="gcap"><b>얼굴 찾기 게임 · 맞히기 다음의 여섯 칸</b><span>PIXEL LAB · CNN SPECIAL 2 — 창이 지나갈 때마다 상자가 쳐진다</span></figcaption></figure>
 
 <header class="hero">
 <div class="wrap hero-text">
@@ -506,7 +517,7 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 <div class="say" data-who="sia"><img data-who="sia" data-mood="explain" alt="" aria-hidden="true"><div><b class="name">인턴 시아</b><p>순서대로 말씀드릴게요. 찾기 네 칸, 칠하기 한 칸, 빌려 쓰기 한 칸입니다. 끝에 대결이 있어요.</p></div></div>
 </div>
 </section>
-<div class="wrap"><div class="stagehd"><b>1구간 · 찾기 (21~24칸)</b> — 창으로 묻고, 겹친 상자를 치우고, 채점합니다.</div></div>
+<div class="wrap"><figure class="gscene " data-img="sc_stage21" role="img" aria-label="모니터 속 넓은 판 위를 노란 창이 훑으며 세 사람 자리에 상자가 쳐지고, 박사와 조수, 초파리 연구원, 주판봇이 지켜봅니다"><div class="gst"><img data-who="doc" data-mood="board" class="opt" alt=""><img data-who="asst" data-mood="firm" alt=""><div class="gmon"><canvas data-kind="find" width="128" height="72"></canvas></div><img data-who="fly" data-mood="magnify" alt=""><img data-who="robo" data-mood="calc" class="opt" alt=""></div><figcaption class="gcap"><b>1구간 · 찾기 (21~24칸)</b><span>PIXEL LAB · STAGE — 창으로 묻고, 겹친 상자를 치우고, 채점합니다.</span></figcaption></figure></div>
 <section class="level" id="r21">
 <div class="wrap">
   <div class="lvhead">
@@ -706,7 +717,7 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 </section>
 
 
-<div class="wrap"><div class="stagehd"><b>2구간 · 칠하기 (25칸)</b> — 찾은 상자 안의 칸을 주인별로 칠합니다.</div></div>
+<div class="wrap"><figure class="gscene " data-img="sc_stage25" role="img" aria-label="모니터 속 세 얼굴이 사람마다 다른 색으로 칠해지고, 시아와 조수, 모아, 초파리 연구원이 봅니다"><div class="gst"><img data-who="sia" data-mood="smile" class="opt" alt=""><img data-who="asst" data-mood="spark" alt=""><div class="gmon"><canvas data-kind="paint" width="128" height="72"></canvas></div><img data-who="moa" data-mood="sparkle" alt=""><img data-who="fly" data-mood="clip" class="opt" alt=""></div><figcaption class="gcap"><b>2구간 · 칠하기 (25칸)</b><span>PIXEL LAB · STAGE — 찾은 상자 안의 칸을 주인별로 칠합니다.</span></figcaption></figure></div>
 <section class="level" id="r25">
 <div class="wrap">
   <div class="lvhead">
@@ -756,7 +767,7 @@ body.gloss-off .jt{border-bottom:0;cursor:auto}
 </section>
 
 
-<div class="wrap"><div class="stagehd"><b>3구간 · 빌려 쓰기 (26칸)</b> — 1편의 돋보기를 가져와 새 식구 후보 셋을 배웁니다.</div></div>
+<div class="wrap"><figure class="gscene " data-img="sc_stage26" role="img" aria-label="모니터에 새 얼굴 세 개와 돋보기 세 개가 나오고, 주판봇과 박사, 조수, 모아가 봅니다"><div class="gst"><img data-who="robo" data-mood="wow" class="opt" alt=""><img data-who="doc" data-mood="front" alt=""><div class="gmon"><canvas data-kind="borrow" width="128" height="72"></canvas></div><img data-who="asst" data-mood="report" alt=""><img data-who="moa" data-mood="cheer" class="opt" alt=""></div><figcaption class="gcap"><b>3구간 · 빌려 쓰기 (26칸)</b><span>PIXEL LAB · STAGE — 1편의 돋보기를 가져와 새 식구 후보 셋을 배웁니다.</span></figcaption></figure></div>
 <section class="level" id="r26">
 <div class="wrap">
   <div class="lvhead">
@@ -1213,6 +1224,44 @@ var NM=CNN.NAMES, CC=['var(--c-asst)','var(--c-sia)','var(--c-moa)'];
 var FK=CNN.FILT, BUN=FK[0].k;
 function fmap(m,f,p){return CNN.relu(CNN.conv(m,FK[f].k,1,p==null?1:p));}
 var DUEL=CNN.duel(7), FLY=DUEL.fly.M, ROBO=DUEL.robo.M;
+
+/* ---------- 게임 화면 (구간 머리 · 표지): 128×72 도트 캔버스 ---------- */
+var GCAT=['.o........o.','.oo......oo.','.oooooooooo.','oooooooooooo','oodoooooodoo','oooooooooooo','ooooowpwoooo','oooowwwwoooo','.oooowwoooo.','..oooooooo..','...oooooo...','............'];
+var GPAL={o:'#e8a04c',d:'#1d1a22',w:'#f4efe6',p:'#ff86b8'}, GHEX=['#ff86b8','#c9c9d6','#e8c48a'];
+(function(){var W=128,H=72;
+  function px(x,X,Y,s,c){x.fillStyle=c;x.fillRect(X,Y,s,s);}
+  function faceAt(x,m,X,Y,s,c,dim){for(var i=0;i<m.length;i++)for(var j=0;j<m[0].length;j++)px(x,X+j*s,Y+i*s,s-(s>3?1:0),m[i][j]>0.5?c:(dim||'rgba(255,255,255,.05)'));}
+  function star(x,X,Y){x.fillStyle='#f1e08a';x.fillRect(X,Y-2,1,5);x.fillRect(X-2,Y,5,1);}
+  var K={
+   cat:function(x,t){x.fillStyle='#1d3a7a';x.fillRect(0,0,W,H);var r=rng(3),s=5,ox=58,oy=6,edge=52+Math.round(Math.sin(t*0.8)*6);
+     for(var i=0;i<12;i++)for(var j=0;j<12;j++){var ch=GCAT[i].charAt(j);if(ch!=='.')px(x,ox+j*s,oy+i*s,s,GPAL[ch]);}
+     for(var Y=0;Y<H;Y+=2)for(var X=0;X<W;X+=2){var v=r(),lim=edge+((X*7+Y*13)%17)-8;if(X<lim){var g=60+Math.floor(v*150);px(x,X,Y,2,'rgb('+g+','+g+','+(g+10)+')');}}
+     star(x,118,20);star(x,112,34);},
+   scan:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);var s=7,ox=36,oy=8,n=Math.floor(t*3)%36,wi=Math.floor(n/6),wj=n%6;faceAt(x,CNN.face(0),ox,oy,s,'#ff86b8');
+     x.strokeStyle='#f1b646';x.lineWidth=2;x.strokeRect(ox+wj*s-1,oy+wi*s-1,s*3+1,s*3+1);
+     var c=CNN.conv(CNN.face(0),CNN.FILT[0].k,1,0);for(var q=0;q<=n;q++){var v=c[Math.floor(q/6)][q%6];px(x,100+(q%6)*4,24+Math.floor(q/6)*4,3,v>0?'rgba(94,227,156,'+(0.3+0.23*v)+')':'rgba(240,96,77,.35)');}},
+   pool:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);var P=[[1,3,2,4],[5,6,1,2],[0,1,3,1],[2,4,2,0]],k=Math.floor(t*1.2)%4,bi=Math.floor(k/2),bj=k%2,i,j;
+     for(i=0;i<4;i++)for(j=0;j<4;j++)px(x,14+j*12,12+i*12,11,'rgba(94,227,156,'+(0.12+0.14*P[i][j])+')');
+     x.strokeStyle='#f1b646';x.lineWidth=2;x.strokeRect(13+bj*24,11+bi*24,24,24);x.fillStyle='#9d9bb8';x.fillRect(68,35,8,2);x.fillRect(74,32,2,8);
+     var O=[[6,4],[4,3]];for(i=0;i<2;i++)for(j=0;j<2;j++)if(i*2+j<=k)px(x,84+j*17,20+i*17,16,'rgba(94,227,156,'+(0.12+0.14*O[i][j])+')');},
+   line:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);var m=CNN.face(0),h=Math.floor(t*6)%48,f,i,j,idx=0;
+     for(f=0;f<3;f++){var p=CNN.pool(CNN.relu(CNN.conv(m,CNN.FILT[f].k,1,1)),2,'max');for(i=0;i<4;i++)for(j=0;j<4;j++){var c='rgba(94,227,156,'+(0.12+0.28*p[i][j])+')';px(x,16+f*36+j*6,8+i*6,5,c);px(x,16+(idx%24)*4,46+Math.floor(idx/24)*8,3,idx===h?'#f1b646':c);idx++;}}
+     x.fillStyle='#9d9bb8';x.fillRect(63,35,2,7);x.fillRect(61,40,6,2);},
+   prob:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);var p=[0.66,0.24,0.10],g=Math.min(1,(t%4)/1.5);x.fillStyle='#363a52';x.fillRect(22,60,84,1);
+     p.forEach(function(v,i){var hh=Math.round(48*v*g);x.fillStyle=GHEX[i];x.fillRect(30+i*26,60-hh,16,hh);faceAt(x,CNN.face(i),31+i*26,62,1.75,GHEX[i],'rgba(0,0,0,0)');});},
+   all:function(x,t){x.fillStyle='#1d2a5a';x.fillRect(0,0,W,H);[0,1,2].forEach(function(k){var up=Math.round(Math.sin(t*2+k)*1.5);faceAt(x,CNN.face(k),10+k*38,16+up,4.5,GHEX[k],'rgba(255,255,255,.04)');});star(x,62,8);star(x,120,58);},
+   find:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);if(typeof CNN2==='undefined')return;var sc=CNN2.scene(1),s=5,ox=4,oy=6;faceAt(x,sc.m,ox,oy,s,'#eceaf3');
+     var R=CNN2.detect(sc.m,0.95,0.3),n=Math.floor(t*14)%160,wy=Math.floor(n/19)-1,wx=n%19-1;if(n<133){x.strokeStyle='rgba(241,182,70,.9)';x.lineWidth=1;x.strokeRect(ox+wx*s,oy+wy*s,8*s,8*s);}
+     R.keep.forEach(function(b){x.strokeStyle=GHEX[b.k];x.lineWidth=2;x.strokeRect(ox+b.x*s,oy+b.y*s,8*s,8*s);});},
+   paint:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);if(typeof CNN2==='undefined')return;var sc=CNN2.scene(2),s=5,ox=4,oy=6,PAL=['#ff86b8','#f1b646','#57d0dc'],lim=Math.floor(t*10)%40;
+     for(var i=0;i<12;i++)for(var j=0;j<24;j++){var o=sc.own[i][j];px(x,ox+j*s,oy+i*s,s-1,o<0?'rgba(255,255,255,.05)':(j<=lim?PAL[o]:'#eceaf3'));}},
+   borrow:function(x,t){x.fillStyle='#141a33';x.fillRect(0,0,W,H);if(typeof CNN2==='undefined')return;[0,1,2].forEach(function(k){faceAt(x,CNN2.nface(k),8+k*40,8,4,'#82b8ff','rgba(255,255,255,.04)');
+       var f=CNN.FILT[k].k;for(var i=0;i<3;i++)for(var j=0;j<3;j++)px(x,18+k*40+j*4,48+i*4,3,f[i][j]>0?'#5ee39c':'#f0604d');});
+     x.strokeStyle='#f1b646';x.lineWidth=1;var k=Math.floor(t)%3;x.strokeRect(16+k*40,46,15,15);}
+  };
+  $$('.gmon canvas').forEach(function(c){var fn=K[c.dataset.kind],x=c.getContext('2d'),t=0,acc=1;if(!fn)return;x.imageSmoothingEnabled=false;
+    addMod(c,function(dt){t+=dt;acc+=dt;if(dt&&acc<0.12)return;acc=0;fn(x,reduce?1.2:t);});fn(x,1.2);});
+})();
 
 /* ================= 2편: 찾기 · 칠하기 · 빌려 쓰기 ================= */
 var CH=['#ff86b8','#c9c9d6','#e8c48a'], NM4=CNN2.NAMES, INK='236,234,243', REDRAW=[];

@@ -57,7 +57,7 @@
       "prompt_en": "docs/COVER_cnn_face_game.md",
       "source_of": null,
       "status": "todo",
-      "note": "지금은 대체 표지 (캐릭터 팩 표정 여섯 장)"
+      "note": "지금은 코드로 그린 게임 화면 (액자 모니터 + 캐릭터 팩 표정). 지시문 docs/SCENES_game_screens.md"
     },
     {
       "id": "cover_part2",
@@ -81,7 +81,223 @@
       "prompt_en": "docs/COVER_cnn_find_game.md",
       "source_of": null,
       "status": "todo",
-      "note": "지금은 대체 표지"
+      "note": "지금은 코드로 그린 게임 화면 (액자 모니터 + 캐릭터 팩 표정). 지시문 docs/SCENES_game_screens.md"
+    },
+    {
+      "id": "sc_stage1",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage1]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage3",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage3]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage9",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage9]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage13",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage13]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage15",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage15]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage18",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "index.html",
+      "key": "figure.gscene[data-img=sc_stage18]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage21",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "part2.html",
+      "key": "figure.gscene[data-img=sc_stage21]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage25",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "part2.html",
+      "key": "figure.gscene[data-img=sc_stage25]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "sc_stage26",
+      "role": "scene",
+      "path": "",
+      "embedded_in": "part2.html",
+      "key": "figure.gscene[data-img=sc_stage26]",
+      "size": [
+        1200,
+        800
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/SCENES_game_screens.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 코드로 그린 게임 화면"
     }
   ],
   "updated": "2026-11-12"
