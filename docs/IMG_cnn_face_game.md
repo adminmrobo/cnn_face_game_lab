@@ -1,4 +1,4 @@
-# CNN 특집 「얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN」 이미지 제작 명세서
+# CNN 특집 「얼굴 알아맞히기 게임 — 20챕터로 배우는 CNN」 이미지 제작 명세서
 
 - 페이지: `index.html` (단일 파일) · 분야: 인공지능 · 형식: 게임형(대결 포함) · 주 앵커: 생활·현장(D)
 - 대결 결과: **F (초파리 승)** — 아웃트로 표정은 박사 `doc_magic`, 초파리 `fly_arms`, 주판봇 `robo_sigh`, 조수 `asst_proud`
@@ -14,7 +14,7 @@
 | `cover_cnn_face` | L 1920×1080 | 페이지 맨 위 표지 | **새로 그림** | 지금은 대체 표지(캐릭터 여섯 줄 세우기). 지시문 `COVER_cnn_face_game.md` |
 | `og_cnn_face` | K 1200×630 | 공유 미리보기 | 표지에서 자름 | 표지 반영 때 `og:image` 메타 추가 |
 | `thumb_cnn_face` | I 600×400 | 목차·현황판 썸네일 | 표지에서 자름 | |
-| `sc_cnn_relay` | E 1200×800 | (선택) 「게임판 한눈에」 위 장면 | 새로 그림 · 선택 | 세 선수 이어달리기 |
+| `sc_cnn_relay` | E 1200×800 | (선택) 「전체 구성 한눈에」 위 장면 | 새로 그림 · 선택 | 세 선수 이어달리기 |
 | `sc_cnn_outro` | E 1200×800 | (선택) 아웃트로 장면 | 새로 그림 · 선택 | 가림막이 걷힌 뒤 |
 | 표정 36장 | A~D | 말풍선·대화·식구 카드 | **캐릭터 팩 재사용** | 아래 4번 목록. 새로 그릴 것 없음 |
 
@@ -53,7 +53,7 @@ No text, no letters, no numbers, no logos.
 | 주판봇 | `robo_smile` `robo_coin` `robo_happy` `robo_sigh` `robo_calc` `robo_wow` |
 | 인턴 시아 | `sia_smile` `sia_explain` `sia_guide` `sia_shock` `sia_proud` |
 | 인턴 모아 | `moa_smile` `moa_cheer` `moa_report` `moa_sparkle` `moa_shock` |
-| 미공개 | `x1_hint` `x2_hint` `x3_hint` (버튼 뒤에서만 보임: 식구 명부, 13·14칸 "전달 요원 부르기") |
+| 미공개 | `x1_hint` `x2_hint` `x3_hint` (버튼 뒤에서만 보임: 식구 명부, 13·14챕터 "전달 요원 부르기") |
 
 ## 5. 일관성 지침
 - 박사·조수·시아·모아는 좌우 반전 금지. 초파리는 왼쪽에서 오른쪽을, 주판봇은 오른쪽에서 왼쪽을 봅니다.
