@@ -298,7 +298,92 @@
       "source_of": null,
       "status": "todo",
       "note": "지금은 코드로 그린 게임 화면"
+    },
+    {
+      "id": "photo_cat",
+      "role": "illustration",
+      "path": "img/cat.webp",
+      "embedded_in": "index.html",
+      "key": "PHOTO.cat",
+      "size": [
+        300,
+        300
+      ],
+      "characters": [],
+      "robot": "none",
+      "prompt_en": "",
+      "source_of": null,
+      "status": "ok",
+      "note": "AI 생성 이미지(Genspark) · 고양이 · 페이지에는 내장, img/는 보관용 사본"
+    },
+    {
+      "id": "photo_dog",
+      "role": "illustration",
+      "path": "img/dog.webp",
+      "embedded_in": "index.html",
+      "key": "PHOTO.dog",
+      "size": [
+        300,
+        300
+      ],
+      "characters": [],
+      "robot": "none",
+      "prompt_en": "",
+      "source_of": null,
+      "status": "ok",
+      "note": "AI 생성 이미지(Genspark) · 강아지 · 페이지에는 내장, img/는 보관용 사본"
+    },
+    {
+      "id": "photo_street",
+      "role": "illustration",
+      "path": "img/street.webp",
+      "embedded_in": "index.html",
+      "key": "PHOTO.street",
+      "size": [
+        540,
+        360
+      ],
+      "characters": [],
+      "robot": "none",
+      "prompt_en": "",
+      "source_of": null,
+      "status": "ok",
+      "note": "AI 생성 이미지(Genspark) · 거리 · 페이지에는 내장, img/는 보관용 사본"
+    },
+    {
+      "id": "photo_sem",
+      "role": "illustration",
+      "path": "img/sem.webp",
+      "embedded_in": "index.html",
+      "key": "PHOTO.sem",
+      "size": [
+        540,
+        360
+      ],
+      "characters": [],
+      "robot": "none",
+      "prompt_en": "",
+      "source_of": null,
+      "status": "ok",
+      "note": "AI 생성 이미지(Genspark) · 거리 종류별 색칠판 · 페이지에는 내장, img/는 보관용 사본"
+    },
+    {
+      "id": "photo_inst",
+      "role": "illustration",
+      "path": "img/inst.webp",
+      "embedded_in": "index.html",
+      "key": "PHOTO.inst",
+      "size": [
+        540,
+        360
+      ],
+      "characters": [],
+      "robot": "none",
+      "prompt_en": "",
+      "source_of": null,
+      "status": "ok",
+      "note": "AI 생성 이미지(Genspark) · 거리 하나하나 색칠판 · 페이지에는 내장, img/는 보관용 사본"
     }
   ],
-  "updated": "2026-11-12"
+  "updated": "2026-11-13"
 }
