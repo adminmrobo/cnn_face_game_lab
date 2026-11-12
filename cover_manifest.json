@@ -9,6 +9,11 @@
         "path": "index.html",
         "kg": true,
         "export": true
+      },
+      {
+        "path": "part2.html",
+        "kg": true,
+        "export": true
       }
     ],
     "files": [
@@ -20,7 +25,7 @@
       "ko"
     ],
     "pages": {
-      "ko": 1
+      "ko": 2
     },
     "readme_langs": [
       "ko"
@@ -53,6 +58,30 @@
       "source_of": null,
       "status": "todo",
       "note": "지금은 대체 표지 (캐릭터 팩 표정 여섯 장)"
+    },
+    {
+      "id": "cover_part2",
+      "role": "cover",
+      "path": "",
+      "embedded_in": "part2.html",
+      "key": "div.cover[data-img=cover_cnn_find]",
+      "size": [
+        1600,
+        900
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot",
+        "sia",
+        "moa"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "docs/COVER_cnn_find_game.md",
+      "source_of": null,
+      "status": "todo",
+      "note": "지금은 대체 표지"
     }
   ],
   "updated": "2026-11-12"

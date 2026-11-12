@@ -16,7 +16,7 @@
 | `thumb_cnn_face` | I 600×400 | 목차·현황판 썸네일 | 표지에서 자름 | |
 | `sc_cnn_relay` | E 1200×800 | (선택) 「게임판 한눈에」 위 장면 | 새로 그림 · 선택 | 세 선수 이어달리기 |
 | `sc_cnn_outro` | E 1200×800 | (선택) 아웃트로 장면 | 새로 그림 · 선택 | 가림막이 걷힌 뒤 |
-| 표정 35장 | A~D | 말풍선·대화·식구 카드 | **캐릭터 팩 재사용** | 아래 4번 목록. 새로 그릴 것 없음 |
+| 표정 36장 | A~D | 말풍선·대화·식구 카드 | **캐릭터 팩 재사용** | 아래 4번 목록. 새로 그릴 것 없음 |
 
 ## 3. 새로 그릴 그림 상세
 
@@ -79,5 +79,5 @@ No text, no letters, no numbers, no logos.
  {"key":"thumb_cnn_face","plate":"I","status":"todo","source_of":"cover_cnn_face"},
  {"key":"sc_cnn_relay","plate":"E","status":"optional"},
  {"key":"sc_cnn_outro","plate":"E","status":"optional"},
- {"key":"expressions","plate":"A-D","status":"done","count":35,"source":"character_pack 1.4 @ 86d04ac, 96px"}]}
+ {"key":"expressions","plate":"A-D","status":"done","count":36,"source":"character_pack 1.4 @ 86d04ac, 96px"}]}
 ```

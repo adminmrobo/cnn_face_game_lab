@@ -1,5 +1,5 @@
 {
- "note": "KG_00_registry.json에 더할 새 ID (CNN 특집). 기존 ID 5개(method/cnn, method/gradient-descent, method/backpropagation, concept/cross-entropy-loss)는 pages에 cnn_face_game만 더하면 됩니다.",
+ "note": "KG_00_registry.json에 더할 항목 (CNN 특집 1·2편). in_registry가 true인 ID는 이미 있으니 pages만 더하면 됩니다.",
  "updated": "2026-11-12",
  "entries": [
   {
@@ -9,7 +9,8 @@
    "label_en": "How does a computer tell whose face it is from 64 numbers?",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:question/face-or-hairstyle",
@@ -18,7 +19,8 @@
    "label_en": "Did the model learn faces or hairstyle patterns?",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:question/learned-filters-effect",
@@ -27,7 +29,8 @@
    "label_en": "How do results change when filters are learned too?",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:question/beyond-one-pixel-shift",
@@ -36,7 +39,19 @@
    "label_en": "How to handle larger shifts, rotation and scale?",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/cnn",
+   "type": "Method",
+   "label_ko": "합성곱 신경망",
+   "label_en": "Convolutional neural network",
+   "pages": [
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": true
   },
   {
    "id": "lab:method/template-matching",
@@ -45,7 +60,8 @@
    "label_en": "Pixel-wise template matching",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/cross-correlation",
@@ -54,7 +70,8 @@
    "label_en": "Convolution (cross-correlation)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/relu",
@@ -63,7 +80,8 @@
    "label_en": "Rectified linear unit",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/max-pooling",
@@ -72,7 +90,8 @@
    "label_en": "Max pooling",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/average-pooling",
@@ -81,7 +100,8 @@
    "label_en": "Average pooling",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/flattening",
@@ -90,7 +110,8 @@
    "label_en": "Flattening",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/fully-connected-layer",
@@ -99,7 +120,8 @@
    "label_en": "Fully connected (dense) layer",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/softmax",
@@ -108,7 +130,28 @@
    "label_en": "Softmax",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label_ko": "경사하강법",
+   "label_en": "Gradient descent",
+   "pages": [
+    "cnn_face_game"
+   ],
+   "in_registry": true
+  },
+  {
+   "id": "lab:method/backpropagation",
+   "type": "Method",
+   "label_ko": "역전파",
+   "label_en": "Backpropagation",
+   "pages": [
+    "cnn_face_game"
+   ],
+   "in_registry": true
   },
   {
    "id": "lab:concept/pixel-grid",
@@ -117,7 +160,8 @@
    "label_en": "Pixel grid",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/kernel-filter",
@@ -126,7 +170,8 @@
    "label_en": "Filter (kernel)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/feature-map",
@@ -135,7 +180,8 @@
    "label_en": "Feature map",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/conv-output-size",
@@ -144,7 +190,8 @@
    "label_en": "Convolution output size",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/padding",
@@ -153,7 +200,8 @@
    "label_en": "Padding",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/stride",
@@ -162,7 +210,8 @@
    "label_en": "Stride",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/translation-tolerance",
@@ -171,7 +220,8 @@
    "label_en": "Tolerance to small translations",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/channel",
@@ -180,7 +230,8 @@
    "label_en": "Channel",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/logit",
@@ -189,7 +240,18 @@
    "label_en": "Logit",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/cross-entropy-loss",
+   "type": "Concept",
+   "label_ko": "손실(교차 엔트로피)",
+   "label_en": "Cross-entropy loss",
+   "pages": [
+    "cnn_face_game"
+   ],
+   "in_registry": true
   },
   {
    "id": "lab:concept/parameter-count",
@@ -198,7 +260,18 @@
    "label_en": "Parameter count",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/weight-sharing",
+   "type": "Concept",
+   "label_ko": "가중치 공유",
+   "label_en": "Weight sharing",
+   "pages": [
+    "cnn_face_game"
+   ],
+   "in_registry": true
   },
   {
    "id": "lab:task/image-classification",
@@ -206,8 +279,10 @@
    "label_ko": "이미지 분류",
    "label_en": "Image classification",
    "pages": [
-    "cnn_face_game"
-   ]
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:task/object-detection",
@@ -215,8 +290,10 @@
    "label_ko": "객체 탐지",
    "label_en": "Object detection",
    "pages": [
-    "cnn_face_game"
-   ]
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:task/image-segmentation",
@@ -224,8 +301,10 @@
    "label_ko": "이미지 분할",
    "label_en": "Image segmentation",
    "pages": [
-    "cnn_face_game"
-   ]
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/transfer-learning",
@@ -233,8 +312,10 @@
    "label_ko": "전이 학습",
    "label_en": "Transfer learning",
    "pages": [
-    "cnn_face_game"
-   ]
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:metric/validation-accuracy-shifted",
@@ -243,7 +324,8 @@
    "label_en": "Accuracy on one-pixel-shifted faces",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:dataset/toy-dot-faces",
@@ -252,7 +334,8 @@
    "label_en": "Toy 8×8 dot-face data",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:limitation/position-bound",
@@ -261,7 +344,8 @@
    "label_en": "Breaks when position changes",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:limitation/shrinking-map",
@@ -270,7 +354,8 @@
    "label_en": "Feature map shrinks",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:limitation/stride-skips",
@@ -279,7 +364,8 @@
    "label_en": "Stride may skip the best match",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:limitation/pooling-loses-position",
@@ -288,7 +374,8 @@
    "label_en": "Pooling discards position within window",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:limitation/learns-only-seen-patterns",
@@ -297,7 +384,8 @@
    "label_en": "Fails outside trained patterns",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:analogy/stencil-filter",
@@ -306,7 +394,8 @@
    "label_en": "Stencil ↔ filter",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:analogy/class-top-score-pooling",
@@ -315,7 +404,8 @@
    "label_en": "Top score per class ↔ max pooling",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:analogy/weighted-grades-dense",
@@ -324,7 +414,8 @@
    "label_en": "Weighted grades ↔ dense layer",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:analogy/shower-knob-gradient-descent",
@@ -333,7 +424,8 @@
    "label_en": "Shower knob ↔ gradient descent",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:claim/conv-is-cross-correlation",
@@ -342,7 +434,8 @@
    "label_en": "Most CNN libraries implement cross-correlation and call it convolution",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:claim/output-size-formula",
@@ -351,7 +444,8 @@
    "label_en": "Output size is floor((H + 2P − K)/S) + 1 for dilation 1 and symmetric padding",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:claim/lenet-conv-subsampling",
@@ -360,7 +454,8 @@
    "label_en": "Networks alternating convolution and subsampling were applied to handwritten digit recognition",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/mltut-cnn-formulas",
@@ -369,7 +464,8 @@
    "label_en": "Convolutional Neural Network (CNN) Formulas infographic",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/lecun1998gradient",
@@ -378,7 +474,8 @@
    "label_en": "LeCun et al. (1998)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/goodfellow2016deep",
@@ -387,7 +484,8 @@
    "label_en": "Goodfellow et al. (2016) Deep Learning",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/lenet-5",
@@ -396,7 +494,8 @@
    "label_en": "LeNet-5",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/alexnet",
@@ -405,7 +504,8 @@
    "label_en": "AlexNet",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/vgg",
@@ -414,7 +514,8 @@
    "label_en": "VGG",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:method/resnet",
@@ -423,7 +524,8 @@
    "label_en": "ResNet",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:concept/skip-connection",
@@ -432,7 +534,8 @@
    "label_en": "Skip (residual) connection",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/krizhevsky2012imagenet",
@@ -441,7 +544,8 @@
    "label_en": "Krizhevsky et al. (2012)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/simonyan2014very",
@@ -450,7 +554,8 @@
    "label_en": "Simonyan & Zisserman (2014)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/he2016deep",
@@ -459,7 +564,8 @@
    "label_en": "He et al. (2016)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/cnn-notes-ch7-8",
@@ -467,8 +573,10 @@
    "label_ko": "CNN 노트 도표 7·8장",
    "label_en": "CNN notes infographic, ch. 7–8",
    "pages": [
-    "cnn_face_game"
-   ]
+    "cnn_face_game",
+    "cnn_find_game"
+   ],
+   "in_registry": false
   },
   {
    "id": "lab:work/dumoulin2016guide",
@@ -477,7 +585,328 @@
    "label_en": "Dumoulin & Visin (2016)",
    "pages": [
     "cnn_face_game"
-   ]
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/who-is-where",
+   "type": "Question",
+   "label_ko": "세 사람이 한 판에 서 있으면 누가 어디 있는지 어떻게 아나",
+   "label_en": "How to tell who is where when several stand in one image?",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/best-confidence-threshold",
+   "type": "Question",
+   "label_ko": "확신 기준은 어떻게 고르나",
+   "label_en": "How should the confidence threshold be chosen?",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:question/learned-vs-handpicked-filters",
+   "type": "Question",
+   "label_ko": "손으로 고른 돋보기 대신 학습한 돋보기를 빌리면 얼마나 달라지나",
+   "label_en": "How much better are learned filters than hand-picked ones for transfer?",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/sliding-window-detection",
+   "type": "Method",
+   "label_ko": "창 밀기",
+   "label_en": "Sliding-window detection",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/non-maximum-suppression",
+   "type": "Method",
+   "label_ko": "겹친 상자 정리(NMS)",
+   "label_en": "Non-maximum suppression",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/semantic-segmentation",
+   "type": "Method",
+   "label_ko": "의미 분할",
+   "label_en": "Semantic segmentation",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/instance-segmentation",
+   "type": "Method",
+   "label_ko": "개체 분할",
+   "label_en": "Instance segmentation",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/feature-extraction",
+   "type": "Method",
+   "label_ko": "특징 추출",
+   "label_en": "Feature extraction (frozen backbone)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/fine-tuning",
+   "type": "Method",
+   "label_ko": "미세 조정",
+   "label_en": "Fine-tuning",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/region-based-detectors",
+   "type": "Method",
+   "label_ko": "후보부터 뽑는 탐지 (R-CNN 계열)",
+   "label_en": "Region-based detectors (R-CNN family)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:method/single-shot-detectors",
+   "type": "Method",
+   "label_ko": "한 번에 내는 탐지 (YOLO·SSD)",
+   "label_en": "Single-shot detectors (YOLO, SSD)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/bounding-box",
+   "type": "Concept",
+   "label_ko": "경계 상자",
+   "label_en": "Bounding box",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/confidence-score",
+   "type": "Concept",
+   "label_ko": "확신 점수",
+   "label_en": "Confidence score",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:concept/background-class",
+   "type": "Concept",
+   "label_ko": "\"없음\" 답",
+   "label_en": "Background class",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:metric/iou",
+   "type": "Metric",
+   "label_ko": "겹친 비율(IoU)",
+   "label_en": "Intersection over Union",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:metric/hits-misses-false-alarms",
+   "type": "Metric",
+   "label_ko": "맞힘 · 놓침 · 헛짚음",
+   "label_en": "True positives, misses, false positives",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:dataset/toy-face-scenes",
+   "type": "Dataset",
+   "label_ko": "24×12 도트 얼굴 판 장난감 데이터",
+   "label_en": "Toy 24×12 dot-face scenes",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/one-answer-per-image",
+   "type": "Limitation",
+   "label_ko": "한 장에 답 하나뿐",
+   "label_en": "One label per image",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/duplicate-boxes",
+   "type": "Limitation",
+   "label_ko": "한 물체에 상자가 여러 개",
+   "label_en": "Duplicate boxes per object",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/threshold-tradeoff",
+   "type": "Limitation",
+   "label_ko": "헛짚음과 놓침의 맞바꿈",
+   "label_en": "Trade-off between false alarms and misses",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/box-is-not-shape",
+   "type": "Limitation",
+   "label_ko": "상자는 모양을 모른다",
+   "label_en": "Boxes do not capture shape",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:limitation/transfer-domain-gap",
+   "type": "Limitation",
+   "label_ko": "새 일이 많이 다르면 덜 맞는다",
+   "label_en": "Transfer degrades with domain gap",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/flashlight-sliding-window",
+   "type": "Analogy",
+   "label_ko": "손전등으로 방 훑기 ↔ 창 밀기",
+   "label_en": "Flashlight sweep ↔ sliding window",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/duplicate-reports-nms",
+   "type": "Analogy",
+   "label_ko": "중복 신고 합치기 ↔ 겹친 상자 정리",
+   "label_en": "Merging duplicate reports ↔ NMS",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/smoke-alarm-threshold",
+   "type": "Analogy",
+   "label_ko": "화재 경보기 감도 ↔ 확신 기준",
+   "label_en": "Smoke-alarm sensitivity ↔ confidence threshold",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:analogy/same-tools-new-recipe",
+   "type": "Analogy",
+   "label_ko": "쓰던 칼과 도마 ↔ 특징 추출",
+   "label_en": "Same tools, new recipe ↔ feature extraction",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/rcnn-region-proposals",
+   "type": "Claim",
+   "label_ko": "R-CNN은 후보 영역을 뽑은 뒤 영역마다 CNN 특징으로 분류한다",
+   "label_en": "R-CNN classifies CNN features computed on region proposals",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/yolo-single-pass",
+   "type": "Claim",
+   "label_ko": "YOLO는 탐지를 한 번의 통과로 상자와 종류 확률을 내는 문제로 푼다",
+   "label_en": "YOLO frames detection as a single-pass regression to boxes and class probabilities",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:claim/features-transfer",
+   "type": "Claim",
+   "label_ko": "앞쪽 층의 특징은 일반적이어서 다른 과제로 옮겨 쓸 수 있고, 과제가 멀수록 효과가 준다",
+   "label_en": "Early-layer features are general and transferable; transferability drops with task distance",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/girshick2014rich",
+   "type": "Work",
+   "label_ko": "Girshick 외 (2014)",
+   "label_en": "Girshick et al. (2014)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/redmon2016you",
+   "type": "Work",
+   "label_ko": "Redmon 외 (2016)",
+   "label_en": "Redmon et al. (2016)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
+  },
+  {
+   "id": "lab:work/yosinski2014transferable",
+   "type": "Work",
+   "label_ko": "Yosinski 외 (2014)",
+   "label_en": "Yosinski et al. (2014)",
+   "pages": [
+    "cnn_find_game"
+   ],
+   "in_registry": false
   }
  ]
 }
