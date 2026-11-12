@@ -1,0 +1,483 @@
+{
+ "note": "KG_00_registry.json에 더할 새 ID (CNN 특집). 기존 ID 5개(method/cnn, method/gradient-descent, method/backpropagation, concept/cross-entropy-loss)는 pages에 cnn_face_game만 더하면 됩니다.",
+ "updated": "2026-11-12",
+ "entries": [
+  {
+   "id": "lab:question/how-cnn-recognizes-face",
+   "type": "Question",
+   "label_ko": "컴퓨터는 숫자 64칸만 보고 어떻게 누구 얼굴인지 맞히나",
+   "label_en": "How does a computer tell whose face it is from 64 numbers?",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:question/face-or-hairstyle",
+   "type": "Question",
+   "label_ko": "모형이 배운 것은 얼굴인가 머리 무늬인가",
+   "label_en": "Did the model learn faces or hairstyle patterns?",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:question/learned-filters-effect",
+   "type": "Question",
+   "label_ko": "돋보기 숫자까지 학습하면 결과가 어떻게 달라지나",
+   "label_en": "How do results change when filters are learned too?",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:question/beyond-one-pixel-shift",
+   "type": "Question",
+   "label_ko": "한 칸보다 큰 이동·회전·크기 변화에는 어떻게 대비하나",
+   "label_en": "How to handle larger shifts, rotation and scale?",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/template-matching",
+   "type": "Method",
+   "label_ko": "통째 비교(자리 그대로 비교)",
+   "label_en": "Pixel-wise template matching",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/cross-correlation",
+   "type": "Method",
+   "label_ko": "합성곱(교차 상관)",
+   "label_en": "Convolution (cross-correlation)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/relu",
+   "type": "Method",
+   "label_ko": "ReLU",
+   "label_en": "Rectified linear unit",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/max-pooling",
+   "type": "Method",
+   "label_ko": "최대 풀링",
+   "label_en": "Max pooling",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/average-pooling",
+   "type": "Method",
+   "label_ko": "평균 풀링",
+   "label_en": "Average pooling",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/flattening",
+   "type": "Method",
+   "label_ko": "펼치기",
+   "label_en": "Flattening",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/fully-connected-layer",
+   "type": "Method",
+   "label_ko": "완전연결층",
+   "label_en": "Fully connected (dense) layer",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/softmax",
+   "type": "Method",
+   "label_ko": "소프트맥스",
+   "label_en": "Softmax",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/pixel-grid",
+   "type": "Concept",
+   "label_ko": "숫자판(픽셀 격자)",
+   "label_en": "Pixel grid",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/kernel-filter",
+   "type": "Concept",
+   "label_ko": "돋보기(필터·커널)",
+   "label_en": "Filter (kernel)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/feature-map",
+   "type": "Concept",
+   "label_ko": "무늬 지도(특징 맵)",
+   "label_en": "Feature map",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/conv-output-size",
+   "type": "Concept",
+   "label_ko": "출력 크기 공식",
+   "label_en": "Convolution output size",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/padding",
+   "type": "Concept",
+   "label_ko": "패딩(덧대기)",
+   "label_en": "Padding",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/stride",
+   "type": "Concept",
+   "label_ko": "스트라이드(건너뛰기)",
+   "label_en": "Stride",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/translation-tolerance",
+   "type": "Concept",
+   "label_ko": "자리 변화에 견디기",
+   "label_en": "Tolerance to small translations",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/channel",
+   "type": "Concept",
+   "label_ko": "채널",
+   "label_en": "Channel",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/logit",
+   "type": "Concept",
+   "label_ko": "로짓",
+   "label_en": "Logit",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/parameter-count",
+   "type": "Concept",
+   "label_ko": "파라미터 수",
+   "label_en": "Parameter count",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:task/image-classification",
+   "type": "Task",
+   "label_ko": "이미지 분류",
+   "label_en": "Image classification",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:task/object-detection",
+   "type": "Task",
+   "label_ko": "객체 탐지",
+   "label_en": "Object detection",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:task/image-segmentation",
+   "type": "Task",
+   "label_ko": "이미지 분할",
+   "label_en": "Image segmentation",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/transfer-learning",
+   "type": "Method",
+   "label_ko": "전이 학습",
+   "label_en": "Transfer learning",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:metric/validation-accuracy-shifted",
+   "type": "Metric",
+   "label_ko": "한 칸 밀린 얼굴 정확도",
+   "label_en": "Accuracy on one-pixel-shifted faces",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:dataset/toy-dot-faces",
+   "type": "Dataset",
+   "label_ko": "8×8 도트 얼굴 장난감 데이터",
+   "label_en": "Toy 8×8 dot-face data",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:limitation/position-bound",
+   "type": "Limitation",
+   "label_ko": "자리가 바뀌면 깨진다",
+   "label_en": "Breaks when position changes",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:limitation/shrinking-map",
+   "type": "Limitation",
+   "label_ko": "훑을수록 지도가 줄어든다",
+   "label_en": "Feature map shrinks",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:limitation/stride-skips",
+   "type": "Limitation",
+   "label_ko": "건너뛰면 놓치는 자리가 생긴다",
+   "label_en": "Stride may skip the best match",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:limitation/pooling-loses-position",
+   "type": "Limitation",
+   "label_ko": "구역 안의 위치가 지워진다",
+   "label_en": "Pooling discards position within window",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:limitation/learns-only-seen-patterns",
+   "type": "Limitation",
+   "label_ko": "배운 무늬 밖은 틀린다",
+   "label_en": "Fails outside trained patterns",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:analogy/stencil-filter",
+   "type": "Analogy",
+   "label_ko": "스텐실 본 ↔ 필터",
+   "label_en": "Stencil ↔ filter",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:analogy/class-top-score-pooling",
+   "type": "Analogy",
+   "label_ko": "반별 최고 점수 ↔ 최대 풀링",
+   "label_en": "Top score per class ↔ max pooling",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:analogy/weighted-grades-dense",
+   "type": "Analogy",
+   "label_ko": "과목별 가중 점수 ↔ 완전연결층",
+   "label_en": "Weighted grades ↔ dense layer",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:analogy/shower-knob-gradient-descent",
+   "type": "Analogy",
+   "label_ko": "샤워기 손잡이 ↔ 경사하강법",
+   "label_en": "Shower knob ↔ gradient descent",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:claim/conv-is-cross-correlation",
+   "type": "Claim",
+   "label_ko": "대부분의 CNN 라이브러리는 커널을 뒤집지 않는 교차 상관을 합성곱이라 부르며 쓴다",
+   "label_en": "Most CNN libraries implement cross-correlation and call it convolution",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:claim/output-size-formula",
+   "type": "Claim",
+   "label_ko": "패딩 P, 스트라이드 S일 때 출력 한 변은 ⌊(H + 2P − K)/S⌋ + 1 (팽창 1, 양쪽 같은 패딩)",
+   "label_en": "Output size is floor((H + 2P − K)/S) + 1 for dilation 1 and symmetric padding",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:claim/lenet-conv-subsampling",
+   "type": "Claim",
+   "label_ko": "합성곱과 부분 표본화(풀링)를 번갈아 쌓은 신경망이 손글씨 숫자 인식에 쓰였다",
+   "label_en": "Networks alternating convolution and subsampling were applied to handwritten digit recognition",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/mltut-cnn-formulas",
+   "type": "Work",
+   "label_ko": "CNN 공식 인포그래픽 (ML Tut)",
+   "label_en": "Convolutional Neural Network (CNN) Formulas infographic",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/lecun1998gradient",
+   "type": "Work",
+   "label_ko": "LeCun 외 (1998)",
+   "label_en": "LeCun et al. (1998)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/goodfellow2016deep",
+   "type": "Work",
+   "label_ko": "Goodfellow 외 (2016) 『Deep Learning』",
+   "label_en": "Goodfellow et al. (2016) Deep Learning",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/lenet-5",
+   "type": "Method",
+   "label_ko": "LeNet-5",
+   "label_en": "LeNet-5",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/alexnet",
+   "type": "Method",
+   "label_ko": "AlexNet",
+   "label_en": "AlexNet",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/vgg",
+   "type": "Method",
+   "label_ko": "VGG",
+   "label_en": "VGG",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:method/resnet",
+   "type": "Method",
+   "label_ko": "ResNet",
+   "label_en": "ResNet",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:concept/skip-connection",
+   "type": "Concept",
+   "label_ko": "건너뛰는 연결",
+   "label_en": "Skip (residual) connection",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/krizhevsky2012imagenet",
+   "type": "Work",
+   "label_ko": "Krizhevsky 외 (2012)",
+   "label_en": "Krizhevsky et al. (2012)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/simonyan2014very",
+   "type": "Work",
+   "label_ko": "Simonyan·Zisserman (2014)",
+   "label_en": "Simonyan & Zisserman (2014)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/he2016deep",
+   "type": "Work",
+   "label_ko": "He 외 (2016)",
+   "label_en": "He et al. (2016)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/cnn-notes-ch7-8",
+   "type": "Work",
+   "label_ko": "CNN 노트 도표 7·8장",
+   "label_en": "CNN notes infographic, ch. 7–8",
+   "pages": [
+    "cnn_face_game"
+   ]
+  },
+  {
+   "id": "lab:work/dumoulin2016guide",
+   "type": "Work",
+   "label_ko": "Dumoulin·Visin (2016)",
+   "label_en": "Dumoulin & Visin (2016)",
+   "pages": [
+    "cnn_face_game"
+   ]
+  }
+ ]
+}
