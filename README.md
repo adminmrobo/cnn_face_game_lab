@@ -2,7 +2,7 @@
 
 AI 연구실 해설 · CNN 특집 · 비전공자용
 
-**바로 보기:** 1편 https://adminmrobo.github.io/cnn_face_game_lab/ · 2편 https://adminmrobo.github.io/cnn_face_game_lab/part2.html
+**바로 보기:** 1편 https://adminmrobo.github.io/cnn_face_game_lab/ · 2편 https://adminmrobo.github.io/cnn_face_game_lab/part2.html · 3D 숫자 지도 https://adminmrobo.github.io/cnn_face_game_lab/digitmap/
 
 가림막 뒤에 하루, 시아, 모아 중 한 사람이 서 있습니다. 박사, 초파리 연구원, 주판봇이 이어달리기로 얼굴을 맞힙니다. 20챕터를 차례로 따라가면 이미지 인식 AI인 CNN(합성곱 신경망)의 공식 열 개가 모두 풀립니다. 코드와 수식을 몰라도 버튼만 눌러 따라갈 수 있습니다.
 
@@ -29,6 +29,15 @@ AI 연구실 해설 · CNN 특집 · 비전공자용
 
 대결은 "창을 한 칸씩 밀까, 세 칸씩 건너뛸까"입니다.
 
+## 3D 실험판 — 숫자 지도 (`digitmap/`)
+
+1편은 "글자 맞히기와 얼굴 맞히기는 크게 다르지 않다"에서 시작합니다. 손글씨 숫자도 얼굴도 8×8칸, 숫자 64개이기 때문입니다. 3D 실험판은 그 손글씨 숫자를 숫자 2개로 줄였다가 다시 그리게 한 결과를 돌려 보는 화면입니다.
+
+- 자료: UCI 손글씨 숫자 모음(8×8칸, 1,797장). 1,257장으로 학습, 나머지 540장을 바닥에 그림.
+- 모형: 64 → 64 → 2 → 64 → 64 오토인코더, 3,000번 학습. 정답(라벨)은 학습에 쓰지 않음.
+- 이웃 5개 다수결로 글자 맞히기: 오토인코더 79.1%, 주성분 분석 59.6% (이 저장소의 `digitmap/train.py`로 직접 계산한 값. 자료 나누기와 시작값에 따라 달라짐).
+- 할 수 있는 것: 학습 0번 → 3,000번 재생, 색 끄기, 틀린 점만 보기, 점을 눌러 원본과 다시 그린 그림 비교, 빈 바닥을 눌러 그 자리의 글자 상상하기, 8×8칸에 직접 써서 지도에 올리기.
+
 ## 읽을 때 알아 둘 점
 
 - 도트 얼굴, 돋보기 숫자, 정확도·확률은 모두 페이지 안에서 계산한 **설명용 모형**의 값입니다. 실제 얼굴 데이터가 아닙니다.
@@ -42,6 +51,9 @@ AI 연구실 해설 · CNN 특집 · 비전공자용
 |---|---|
 | `index.html` | 1편 해설 페이지 (단일 파일, 외부 라이브러리 없음) |
 | `part2.html` | 2편 해설 페이지 (단일 파일) |
+| `digitmap/index.html` | 3D 실험판 「숫자 지도」 (three.js) |
+| `digitmap/data.js` · `digitmap/train.py` | 실험판 자료와, 그 자료를 다시 만드는 학습 스크립트 |
+| `chars3d/lab3d.js` | 3D 캐릭터 모듈 |
 | `docs/IMG_cnn_face_game.md` · `docs/IMG_cnn_find_game.md` | 이미지 제작 명세서 (1편 · 2편) |
 | `docs/COVER_cnn_face_game.md` · `docs/COVER_cnn_find_game.md` | 표지 그림 지시문 (1편 · 2편) |
 | `docs/SCENES_game_screens.md` | 게임 화면 장면 그림 지시문 묶음 (표지 2 + 파트 머리 9) |
